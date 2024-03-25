@@ -1,0 +1,364 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  @apply text-black dark:text-gray-300 text-base md:text-lg leading-relaxed lg:leading-loose;
+}
+
+img {
+  @apply rounded-lg shadow-xl dark:shadow-none;
+}
+
+code {
+  @apply dark:text-green-400 rounded-md dark:bg-zinc-700;
+}
+
+ul,
+li {
+  @apply text-black dark:text-gray-300 text-base md:text-lg leading-relaxed lg:leading-loose;
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+pre {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extpxe */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
+}
+
+.data-footnote-backref {
+  @apply no-underline;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+
+@layer components {
+  .area-destell {
+    text-align: center;
+    animation: blur 0.75s ease-in-out infinite;
+    text-shadow: 0px 0px 5px #fff;
+  }
+
+  @keyframes blur {
+    0%,
+    100% {
+      text-shadow:
+        0px 0px 2px #fff,
+        0px 0px 2px #fff; /* Sombra suave */
+    }
+    50% {
+      text-shadow:
+        0px 0px 2px #fff,
+        0px 0px 1px #fff; /* Más sutil en el punto medio de la animación */
+    }
+  }
+
+  .subrayado {
+    position: relative;
+  }
+
+  .subrayado::before {
+    background: linear-gradient(to right, #c5c5c5, #f6f6f6, #c5c5c5);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .subrayado:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .shadow-card {
+    --tw-shadow: 0 0 5px 1px rgb(0 0 0 / 0.1), 0 0 5px 1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 0 5px 1px var(--tw-shadow-color), 0 0 5px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
+  }
+
+  .arrow-animate {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    padding-right: 32px;
+  }
+
+  .arrow-animate:after {
+    content: attr(data-icon);
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    right: -20px;
+    transition: 0.3s;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .arrow-animate:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  .arrow-animate-l {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    padding-left: 32px;
+  }
+
+  .arrow-animate-l:after {
+    content: attr(data-icon);
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: -20px;
+    transition: 0.3s;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .arrow-animate-l:after {
+    content: attr(data-icon);
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: -20px;
+    transition: 0.3s;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .arrow-animate-l:hover:after {
+    opacity: 1;
+    left: 10px;
+  }
+
+  .arrow-static-l{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 16px;
+    text-overflow: ellipsis;
+
+  }
+
+  .arrow-static-l:after {
+    content: attr(data-icon);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .arrow-static{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 16px;
+    text-overflow: ellipsis;
+  }
+
+  .arrow-static:after {
+    content: attr(data-icon);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+
+
+
+
+  @keyframes clickAnimate {
+    0%,
+    100% {
+      transform: scale(1); /* Estado inicial y final: escala original */
+    }
+    50% {
+      transform: scale(0.9); /* Reduce la escala en un 5% en la mitad de la animación */
+    }
+  }
+
+  @keyframes clickAnimate2 {
+    0%,
+    100% {
+      transform: scale(1); /* Estado inicial y final: escala original */
+    }
+    50% {
+      transform: scale(0.95); /* Reduce la escala en un 5% en la mitad de la animación */
+    }
+  }
+
+  .clickIconAnimate {
+    animation: clickAnimate 0.2s ease-in-out 1 alternate both; /* Aplica la animación al elemento */
+  }
+
+  .clickCardAnimate {
+    animation: clickAnimate2 0.2s ease-in-out 1 alternate both; /* Aplica la animación al elemento */
+  }
+
+  
+  .sign {
+    background-image: radial-gradient(ellipse 50% 35% at 50% 50%, #004d40, transparent);
+    animation: glitch 3s ease-in-out infinite, shine 2s forwards, flicker 3s infinite;
+    color: #ffffff; /* Blanco */
+    text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff;
+}
+
+@keyframes glitch {
+    2%, 64% {
+      transform: translate(0.5px, 0) skew(0deg);
+    }
+    4%, 60% {
+      transform: translate(-0.5px, 0) skew(0deg);
+    }
+    62% {
+      transform: translate(0, 0) skew(1deg);
+    }
+}
+
+@keyframes blink {
+    0%, 22%, 36%, 75% {
+      color: #ffffff;
+      text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff;
+    }
+    28%, 33%, 82%, 97% {
+      color: #ffffff;
+      text-shadow: none;
+    }
+}
+
+.flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+    0% {
+      color: #ffffff;
+      text-shadow: none;
+    }
+    80%, 100% {
+      color: #ffffff;
+      text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff;
+    }
+}
+
+@keyframes flicker {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}
+
+/* Adaptaciones para el modo oscuro */
+@media (prefers-color-scheme: dark) {
+    .sign, .flicker, .fast-flicker {
+        color: #ffffff; /* Oscuro en lugar de blanco */
+        text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff;
+    }
+
+    @keyframes blink {
+        0%, 22%, 36%, 75% {
+          color: #ffffff;
+          text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff;
+        }
+        28%, 33%, 82%, 97% {
+          color: #ffffff;
+          text-shadow: none;
+        }
+    }
+
+    @keyframes shine {
+        0% {
+          color: #ffffff;
+          text-shadow: none;
+        }
+        80%, 100% {
+          color: #ffffff;
+          text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff;
+        }
+    }
+}
+}

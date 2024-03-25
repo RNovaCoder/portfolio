@@ -1,0 +1,52 @@
+---
+title: Yapefy
+summary: 'Aplicación dirigida principalmente al comercio minorista, proporcionando una solución ágil y eficiente para verificar los pagos realizados a través de la plataforma Yape.'
+date: '2024-03-01'
+draft: false
+tags: ['NetFramework', 'Sharp', 'Azure', 'HostGator']
+
+authors: ['ricardo']
+layout: PostSimple
+techStack: ['AndroidSdk', 'Java', 'GoogleAuth', 'Firebase' ,'GoogleCloud' ,'Laravel' ,'Php', 'Git', 'PlayStore']
+imgSrc: '/static/proyectos/yapefy/YapefyPortada.jpg'
+logo: '/static/proyectos/yapefy/YapefyLogoFondo.svg'
+---
+
+import { TechStack } from '@/components/DevIcons'
+
+<TOCInline toc={props.toc} asDisclosure />
+
+## Introducción
+
+<CImage src="/static/proyectos/yapefy/YapefyPortada.jpg" />
+
+Aplicación móvil dirigida principalmente al comercio minorista, proporcionando una solución ágil y eficiente
+para verificar los pagos realizados a través de la plataforma Yape.
+
+**Yapefy** da lectura en voz alta a las notificaciones de tus nuevos yapes, además te permite hacer filtrado de tus pagos por nombre, fecha o monto para encontrar un Yape pasado.
+
+También ofrece una integración con cuentas de correo electrónico Gmail, lo que permite centralizar la información de los pagos en una única plataforma. Esta integración proporciona a los usuarios la posibilidad de acceder a estadísticas detalladas sobre sus pagos desde cualquier dispositivo a través del sitio web **YapefyWeb**.
+
+
+## Características
+
+- Captura las notificaciones de tus pagos y los lee en voz alta
+- Permite hacer filtrado por nombre, fecha o monto para encontrar un Yape
+- Posibilidad de subir datos de manera más robusta a través de los registros Csv o Xlsx que ofrece la app oficial de Yape
+- Uso de Google Auth - Gmail para la autenticación
+
+<CImage src="/static/proyectos/yapefy/Inicio.jpg" />
+<CImage src="/static/proyectos/yapefy/FilNombre.jpg" />
+<CImage src="/static/proyectos/yapefy/FilFecha.jpg" />
+<CImage src="/static/proyectos/yapefy/FilMonto.jpg" />
+
+## Tecnologías usadas
+
+<TechStack stacks={props.techStack} />
+- Construido sobre Android SDk
+- Programado en Java, y Xml para el diseño
+- Sistema de autenticación basado en Google Auth y la Plataforma de FireBase
+- Uso de los servicios de Google Cloud Computing, específicamente el de IA - **SpeechToText** para las notificaciones
+- Integrado con un backend construido sobre Laravel
+- Backend programado en PHP
+- Aplicación disponible en la Play Store: <CLink className="inline-block" href="https://play.google.com/store/apps/details?id=com.novacoder.looptransaction&hl=es_PE"/>

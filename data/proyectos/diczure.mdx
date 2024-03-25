@@ -1,0 +1,46 @@
+---
+title: DicZure
+summary: 'Un sencillo transcriptor Voz a Texto de alta precisión para Windows, utiliza los servicio de Speech Service IA de Azure.'
+date: '2023-08-22'
+draft: false
+tags: ['NetFramework', 'Sharp', 'Azure', 'HostGator']
+
+authors: ['ricardo']
+layout: PostSimple
+techStack: ['NetFramework', 'Sharp', 'Azure', 'Git', 'HostGator']
+imgSrc: "/static/proyectos/diczure/DicZurePortada.jpg"
+logo: "/static/proyectos/diczure/DicZureLogo.svg"
+---
+
+import { TechStack } from '@/components/DevIcons'
+
+<TOCInline toc={props.toc} asDisclosure />
+
+## Introducción
+
+<CImage src="/static/proyectos/diczure/DicZurePortada.jpg" />
+En el entorno de Windows, la funcionalidad de dictado de voz a texto se facilita mediante la herramienta nativa de Reconocimiento de Voz, aunque esta herramienta proporciona una solución accesible para el dictado rápido, a menudo se encuentra con una tasa relativamente alta de errores en la transcripción.
+
+Alternativamente, existen servicios de terceros ofrecidos por compañías como Google y Microsoft, los cuales proporcionan estas funcionalidades. Sin embargo, el uso de estos servicios se encuentra limitado a entornos de navegador web, lo que es una restricción considerable.
+
+Teniendo en cuenta estas limitaciones se desarrolló **DicZure**, una sencilla app transcriptora Voz a Texto de alta presición que utiliza IA. DicZure se puede utilizar en **cualquier** entrada de texto, sea una app de ofimática, en el chat de un juego, en un navegador, etc.
+
+## Ejemplo de uso
+
+<CVideo src="/proyectos/diczure/DemoDicZure.mp4" />
+
+## Características
+
+- Varios comandos específicos para los siguiente signos: “**. , - : ;**”
+- La ventana de la aplicación pasa totalmente desapercibida y quita el foco del cursor al interactuar con ella.
+- Corrige automáticamente espacios irregulares y reemplaza signos de puntuación si es necesario
+- Usa la palabra-clave “**litexto**” para activarse
+
+## Tecnologías usadas
+
+<TechStack stacks={props.techStack} />
+- Construido sobre .Net Framework (el antiguito)
+- Programado en C#
+- Se usan los servicios de Microsoft Azure Cognitive Services, en específico su servicio de Reconocimiento de Voz, además, se ha entrenado el modelo de una pequeña frase para poder ser usado en local como palabra clave de activación. “**Litexto**”
+- Instalador disponible en el siguiente servidor de Hostgator: <CLink className="inline-block" href="https://diczure.webprized.com/DicZure-Setup.exe"/>
+> Nota: Los créditos son limitados, puede contactarme para obtener más

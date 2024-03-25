@@ -1,0 +1,72 @@
+---
+title: Yapefy Web
+summary: 'Plataforma que complementa a Yapefy, aquí se puede obtener estadísticas útiles sobre tus Yapes y filtros más rápidos, todo esto sobre los mismos datos ya cargados a Yapefy.'
+date: '2023-11-29'
+draft: false
+tags: ['Python', 'Machine Learning']
+authors: ['ricardo']
+layout: PostSimple
+techStack:
+  [
+    'TypeScript',
+    'ChartJs',
+    'Laravel',
+    'Php',
+    'GoogleAuth',
+    'AmazonWS',
+    'MySQL',
+    'React',
+    'TailWind',
+    'Git',
+    'HostGator',
+    'Astro',
+    'JavaScript',
+  ]
+imgSrc: '/static/proyectos/yapefyweb/YapefyWebPortada.jpg'
+logo: "/static/proyectos/yapefyweb/YapefyWebLogo.svg"
+
+---
+
+import { TechStack } from '@/components/DevIcons'
+
+<TOCInline toc={props.toc} asDisclosure />
+
+## Introducción
+
+<CImage src="/static/proyectos/yapefyweb/YapefyWebPortada.jpg" />
+
+Quizás se necesita más flexibilidad para acceder a la información de Yapefy, o tener más comodidad para revisar los pagos.
+
+**YapefyWeb** es la plataforma que complementa a Yapefy, aquí se puede obtener estadísticas útiles sobre tus Yapes y filtros más rápidos, todo esto sobre los mismos datos ya cargados a Yapefy.
+
+## Características
+
+- Estadísticas sobre los mayores pagadores de cada mes
+- Estadísticas sobre el acumulado de pagos diarios de cada mes
+- Estadísticas sobre los pagadores más frecuentes
+- Filtrado de tus pagos por nombre, fecha o monto
+- Posibilidad de subir datos de manera más robusta a través de los registros Csv o Xlsx que ofrece la app oficial de Yape
+
+<CImage src="/static/proyectos/yapefyweb/PagoDiarioMes.jpg" />
+<CImage src="/static/proyectos/yapefyweb/MaxPagadores.jpg" />
+<CImage src="/static/proyectos/yapefyweb/FrecPagadores.jpg" />
+<CImage src="/static/proyectos/yapefyweb/UpdateCua.jpg" />
+
+## Tecnologías usadas
+
+<TechStack stacks={props.techStack.slice(0, 11)} />
+- Aplicación SPA construida sobre React y TailWindCss
+- Programado en Html, Css y TypeScript
+- Librerías de ChartJs para las estadísticas
+- Backend programado en PHP
+- Integrado con un backend construido sobre Laravel
+- Sistema de autenticación basado en Google Auth y Laravel Socialite
+- Base de datos construida sobre Amazon Web Services, en concreto sobre **Amazon RDS** usando un cliente MySql
+- Plataforma alojada y configurada en un servidor de Hostgator. Disponible en el siguiente enlace (deberás logearte con una cuenta de Gmail): <CLink className="inline-block" href="https://yapefy.webprized.com/app" />
+
+## Landing Page - Tecnologías usadas
+Página Web con más información sobre Yape y Yapefy Web
+<TechStack stacks={props.techStack.slice(7)} />
+- Construido sobre Astro, React y TailwindCss
+- Programado en Html, Css y JavaScript
+- Web alojada y configurada en un servidor de Hostgator, disponible en el siguiente enlace: <CLink className="inline-block" href="https://yapefy.webprized.com" />
