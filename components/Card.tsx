@@ -6,7 +6,7 @@ import { DevIcons } from "./DevIcons";
 const Card = ({ title, description, imgSrc, href, techStack }) => {
 
   return (
-    <div className="max-w-lg group hover:scale-[1.03] transition-transform duration-150 ease-in-out rounded-xl ">
+    <div className="max-w-lg group hover:scale-[1.03] transition-transform duration-150 ease-in-out rounded-xl transform-gpu">
       <Link href={href} className="block focus:clickCardAnimate">
         <div className="flex flex-col hover:border-slate-500 h-full overflow-hidden rounded-xl border-2 p-[6px] dark:shadow-slate-800 shadow-card shadow-slate-200 hover:dark:shadow-slate-500 border-zinc-400/60 hover:shadow-slate-500 dark:border-slate-600 hover:dark:border-slate-300/80">
           {imgSrc && (

@@ -10,7 +10,7 @@ const siteMetadata = {
   siteUrl: "https://portfolio.webprized.com",
   siteRepo: "https://github.com/RNovaCoder",
   siteLogo: "/static/images/logo.png",
-  socialBanner: "/static/images/twitter-card.png",
+  socialBanner: "/static/favicons/NCoderLogo.svg",
   email: "ricardodanielvilla1@gmail.com",
   github: "https://github.com/RNovaCoder",
   twitter: "https://twitter.com/",
