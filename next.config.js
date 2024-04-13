@@ -10,7 +10,7 @@ const ContentSecurityPolicy = `
   script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is https://va.vercel-scripts.com;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
-  media-src 'self' *.s3.amazonaws.com media.webprized.com;
+  media-src 'self' *.s3.amazonaws.com *.webprized.com *.novacoder.tech;
   connect-src *;
   font-src 'self' data:;
   frame-src giscus.app
