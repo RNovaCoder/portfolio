@@ -19,7 +19,7 @@ function CImage({ src, caption = '', classname }: CImageProps) {
         width="0"
         height="0"
         sizes="100vw"
-        className={'w-auto h-auto max-w-full object-contain max-h-[90vh] mx-auto ' + (!caption && " mb-5 ")+ classname}
+        className={'w-full h-auto max-w-full object-contain max-h-[90vh] mx-auto ' + (!caption && " mb-5 ")+ classname}
       />
       {caption && (
         <figcaption className="text-center -mt-6 font-bold dark:text-gray-100/95">
