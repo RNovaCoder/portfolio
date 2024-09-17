@@ -1,26 +1,26 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: "Portfolio",
+  title: "Portfolio | Nova Coder",
   author: "Ricardo Daniel Villa A.",
   headerTitle: "Nova Coder",
-  description: "Trabajos hechos",
+  description: "Nova Coder | Soy Desarrollador de Software con una amplia flexibilidad para diferentes tecnologías y flujos de trabajo, capaz de integrarse rápidamente en nuevos entornos de desarrollo aportando mayor valor en los proyectos.",
   language: "es-PE",
   whatsapp: "+51977345733",
   theme: "dark", // system, dark or light
-  siteUrl: "https://portfolio.webprized.com",
+  siteUrl: "https://portfolio.novacoder.tech",
   siteRepo: "https://github.com/RNovaCoder",
-  siteLogo: "/static/images/logo.png",
+  siteLogo: "/static/favicons/NCoderLogo.svg",
   socialBanner: "/static/favicons/NCoderLogo.svg",
   email: "ricardodanielvilla1@gmail.com",
   github: "https://github.com/RNovaCoder",
   twitter: "https://twitter.com/",
   linkedin:
-    "https://pe.linkedin.com/in/ricardo-daniel-villa-atanacio-30a4ba2b5",
+    "https://linkedin.com/in/nova-coder",
   locale: "es-PE",
   socialLinks: {
     github: "https://github.com/RNovaCoder",
     linkedin:
-      "https://pe.linkedin.com/in/ricardo-daniel-villa-atanacio-30a4ba2b5",
+      "https://linkedin.com/in/nova-coder/",
     twitter: "https://twitter.com/",
     mail: "mailto:ricardodanielvilla1@correo.com",
   },
