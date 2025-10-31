@@ -1,28 +1,31 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: "Portfolio",
-  author: "Ricardo Daniel Villa A.",
-  headerTitle: "Nova Coder",
-  description: "Trabajos hechos",
+  author: "Ricardo V.",
+  legalEntity: "NOVA CODER",
+  description: "Proyectos NovaCoder",
   language: "es-PE",
-  whatsapp: "+51977345733",
+  whatsapp: "+14242790722",
   theme: "dark", // system, dark or light
-  siteUrl: "https://portfolio.webprized.com",
+  siteUrl: "https://portfolio.novacoder.tech",
   siteRepo: "https://github.com/RNovaCoder",
-  siteLogo: "/static/images/logo.png",
-  socialBanner: "/static/favicons/NCoderLogo.svg",
-  email: "ricardodanielvilla1@gmail.com",
+  siteLogo: "/static/favicons/NCoderLogo.svg",
+  socialBanner: "/static/images/NovaCoderBanner.jpg",
+  socialBannerWidth: 1646,
+  socialBannerHeight: 1080,
+  socialBannerLabel: "NovaCoder Portada",
+  email: "rdevcontact1@gmail.com",
   github: "https://github.com/RNovaCoder",
   twitter: "https://twitter.com/",
   linkedin:
-    "https://pe.linkedin.com/in/ricardo-daniel-villa-atanacio-30a4ba2b5",
+    "https://www.linkedin.com/in/rdevcode",
   locale: "es-PE",
   socialLinks: {
     github: "https://github.com/RNovaCoder",
     linkedin:
-      "https://pe.linkedin.com/in/ricardo-daniel-villa-atanacio-30a4ba2b5",
+      "https://www.linkedin.com/in/rdevcode",
     twitter: "https://twitter.com/",
-    mail: "mailto:ricardodanielvilla1@correo.com",
+    mail: "mailto:rdevcontact1@correo.com",
   },
   analytics: {
     // If you want to use an analytics provider you have to add it to the

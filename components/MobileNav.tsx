@@ -47,7 +47,7 @@ const MobileNav = (props: { author?: string }) => {
               onClick={onToggleNav}
               className={`group flex p-3 px-5 rounded-md hover:bg-gray-200 hover:dark:bg-zinc-700/60 w-full justify-start cursor-pointer text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 transition-all duration-150 ease-in-out ${
                 pathname === route.href
-                  ? 'bg-gray-200 dark:bg-zinc-700/60 dark:text-primaryCentral p-2 '
+                  ? 'bg-gray-200 dark:bg-zinc-700/60 dark:text-[#2deaff] p-2 '
                   : ''
               }
               `}

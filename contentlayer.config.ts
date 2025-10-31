@@ -92,11 +92,13 @@ export const Blog = defineDocumentType(() => ({
     summary: { type: "string" },
     imgSrc: { type: "string", required: true },
     techStack: { type: "list", of: { type: "string" }, required: true },
+    techStackAux: { type: "list", of: { type: "string" }, default: [] },
     images: { type: "list", of: { type: "string" } },
     authors: { type: "list", of: { type: "string" } },
     layout: { type: "string" },
     bibliography: { type: "string" },
     canonicalUrl: { type: "string" },
+    siteUrl: { type: "string" },
   },
   computedFields: {
     ...computedFields,

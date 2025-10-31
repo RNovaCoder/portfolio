@@ -25,7 +25,7 @@ export default function PostLayout({
   prev,
   children,
 }: LayoutProps) {
-  const { path, slug, date, title, tags, logo } = content;
+  const { path, slug, date, title, tags, logo, siteUrl } = content;
   const basePath = path.split("/")[0];
 
   return (
@@ -57,11 +57,6 @@ export default function PostLayout({
                     />
                   )}
                 </div>
-                {/* <div className="flex flex-wrap items-center justify-center">
-                  {tags.map((tag) => (
-                    <Tag key={tag} text={tag} />
-                  ))}
-                </div> */}
                 <div className="flex relative flex-wrap gap-y-4 px-1 flex-row items-center justify-between mt-4 -mb-4">
                   <div className="flex">
                     <Link
@@ -73,33 +68,44 @@ export default function PostLayout({
                       Proyectos
                     </Link>
                   </div>
-                  {authorDetails.map(
-                    (author, key) =>
-                      author.name && (
-                        <Link href={`/sobremi`} key={key}>
-                          <ul className="flex flex-wrap px-3 select-none justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8 bg-gray-200 dark:bg-zinc-700/70 p-2 rounded-lg shadow-md hover:bg-gray-300 hover:dark:bg-zinc-700">
-                            <li
-                              className="flex items-center space-x-2"
-                              key={author.name}
-                            >
-                              {author.avatar && (
-                                <div className="h-7 w-7 overflow-hidden">
-                                  <Image
-                                    width={50}
-                                    height={50}
-                                    src={author.avatar}
-                                    alt="avatar"
-                                    className="overflow-hidden w-full h-full rounded-full object-cover"
-                                  />
-                                </div>
-                              )}
-                              <span className="whitespace-nowrap text-base font-medium leading-5">
-                                {author.name}
-                              </span>
-                            </li>
-                          </ul>
-                        </Link>
-                      ),
+                  {siteUrl ? (
+                      <Link
+                        href={siteUrl}
+                        className="text-blue-600 group bg-gray-200 rounded-lg dark:bg-zinc-700/70 py-2 px-4 dark:text-blue-400 hover:bg-gray-300/80 hover:dark:bg-zinc-700"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span className="group-hover:underline">Ir a sitio</span> <span> 🌐 </span>
+                      </Link>
+                  ) : (
+                    authorDetails.map(
+                      (author, key) =>
+                        author.name && (
+                          <Link href={`/sobremi`} key={key}>
+                            <ul className="flex flex-wrap px-3 select-none justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8 bg-gray-200 dark:bg-zinc-700/70 p-2 rounded-lg shadow-md hover:bg-gray-300 hover:dark:bg-zinc-700">
+                              <li
+                                className="flex items-center space-x-2"
+                                key={author.name}
+                              >
+                                {author.avatar && (
+                                  <div className="h-7 w-7 overflow-hidden">
+                                    <Image
+                                      width={50}
+                                      height={50}
+                                      src={author.avatar}
+                                      alt="avatar"
+                                      className="overflow-hidden w-full h-full rounded-full object-cover"
+                                    />
+                                  </div>
+                                )}
+                                <span className="whitespace-nowrap text-base font-medium leading-5">
+                                  {author.name}
+                                </span>
+                              </li>
+                            </ul>
+                          </Link>
+                        ),
+                    )
                   )}
                 </div>
               </div>
@@ -107,15 +113,10 @@ export default function PostLayout({
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0">
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">
+              <div className="prose max-w-[52rem] justify-self-center pb-8 pt-10 dark:prose-invert">
                 {children}
               </div>
             </div>
-            {/* {siteMetadata.comments && (
-              <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300" id="comment">
-                <Comments slug={slug} />
-              </div>
-            )} */}
             <footer>
               <div className="flex sm:px-1 flex-wrap flex-row text-sm font-medium gap-x-[40px] justify-between sm:text-base">
                 {prev && prev.path ? (

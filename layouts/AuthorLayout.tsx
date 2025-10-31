@@ -51,7 +51,7 @@ export default function AuthorLayout({ children, content }: Props) {
               <SocialIcon kind="github" href={github} />
             </div>
           </div>
-          <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
+          <div className="prose max-w-4xl justify-self-center pb-8 pt-8 dark:prose-invert xl:col-span-2">
             {children}
           </div>
         </div>

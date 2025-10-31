@@ -8,26 +8,25 @@ authors: ['ricardo']
 layout: PostSimple
 techStack:
   [
-    'TypeScript',
-    'ChartJs',
     'Laravel',
-    'Php',
-    'GoogleAuth',
-    'AmazonWS',
-    'MySQL',
     'React',
+    'Astro',
+    'HostGator',
+    'AmazonWS',
+    'TypeScript',
+    'Php',
+    'MySQL',
+    'GoogleAuth',
     'TailWind',
     'Git',
-    'HostGator',
-    'Astro',
-    'JavaScript',
+    'ChartJs',
   ]
 imgSrc: '/static/proyectos/yapefyweb/YapefyWebPortada.jpg'
 logo: "/static/proyectos/yapefyweb/YapefyWebLogo.svg"
+siteUrl: "https://yapefy.webprized.com"
 
 ---
 
-import { TechStack } from '@/components/DevIcons'
 
 <TOCInline toc={props.toc} asDisclosure />
 
@@ -52,9 +51,9 @@ Quizás se necesita más flexibilidad para acceder a la información de Yapefy, 
 <CImage src="/static/proyectos/yapefyweb/FrecPagadores.jpg" />
 <CImage src="/static/proyectos/yapefyweb/UpdateCua.jpg" />
 
-## Tecnologías usadas
+## Tecnologías usadas y enlaces
 
-<TechStack stacks={props.techStack.slice(0, 11)} />
+<TechStack stacks={props.techStack} />
 - Aplicación SPA construida sobre React y TailWindCss
 - Programado en Html, Css y TypeScript
 - Librerías de ChartJs para las estadísticas
@@ -66,7 +65,7 @@ Quizás se necesita más flexibilidad para acceder a la información de Yapefy, 
 
 ## Landing Page - Tecnologías usadas
 Página Web con más información sobre Yape y Yapefy Web
-<TechStack stacks={props.techStack.slice(7)} />
+<TechStack stacks={props.techStack.filter((_,i)=>[1,2,3,9,10].includes(i))} />
 - Construido sobre Astro, React y TailwindCss
 - Programado en Html, Css y JavaScript
 - Web alojada y configurada en un servidor de Hostgator, disponible en el siguiente enlace: <CLink className="inline-block" href="https://yapefy.webprized.com" />

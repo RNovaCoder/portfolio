@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 p {
-  @apply text-black dark:text-gray-300 text-base md:text-lg leading-relaxed lg:leading-loose;
+  @apply text-black dark:text-gray-300 text-base md:text-lg leading-relaxed lg:leading-8 lg:text-xl lg:font-normal;
+}
+
+.prose li p {
+  @apply text-lg max-sm:text-base;
 }
 
 img {
@@ -16,7 +20,7 @@ code {
 
 ul,
 li {
-  @apply text-black dark:text-gray-300 text-base md:text-lg leading-relaxed lg:leading-loose;
+  @apply text-black dark:text-gray-300 text-base md:text-lg leading-relaxed;
 }
 
 /* ::-webkit-scrollbar {
@@ -87,7 +91,6 @@ pre {
   @apply my-5;
 }
 
-/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition:
@@ -121,7 +124,7 @@ input:-webkit-autofill:focus {
   }
 
   .subrayado::before {
-    background: linear-gradient(to right, #c5c5c5, #f6f6f6, #c5c5c5);
+    background: linear-gradient(to right, #75f1ff, #2deaff, #75f1ff);
     content: '';
     position: absolute;
     width: 100%;
@@ -382,4 +385,12 @@ input:-webkit-autofill:focus {
 
 *::-webkit-scrollbar-track {
   border-radius: 30px;  
+}
+
+.video-react {
+  background: #8080802e !important;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  max-height: 90vh;
+  width: 100% !important;
 }

@@ -22,6 +22,10 @@ module.exports = {
         13: "3.25rem",
         14: "3.5rem",
       },
+      dropShadow: {
+        'white': '0 0 24px rgba(255, 255, 255, 0.474)',
+        'soft-orange': '0 8px 24px rgba(255,146,43,0.30)',
+      },
       fontFamily: {
         sans: ["var(--font-space-grotesk)", ...fontFamily.sans],
       },
@@ -116,5 +120,9 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("flowbite/plugin"),
+    function ({ addVariant }) {
+      // Aplica cuando el documento NO tiene la clase .dark
+      addVariant("light", ":is(html):not(.dark) &");
+    },
   ],
 };

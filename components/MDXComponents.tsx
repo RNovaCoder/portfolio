@@ -7,6 +7,7 @@ import CustomLink from "./Link";
 import CImage from "./CImage";
 import CVideo from "./CVideo";
 import CLink from "./CLink";
+import { TechStack } from "./DevIcons";
 
 export const components: MDXComponents = {
   Image,
@@ -17,4 +18,5 @@ export const components: MDXComponents = {
   CImage,
   CVideo,
   CLink,
+  TechStack
 };

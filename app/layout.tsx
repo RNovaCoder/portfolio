@@ -1,16 +1,27 @@
 import "css/tailwind.css";
 import "pliny/search/algolia.css";
 import "../components/video-react/video-react.css"; // import css
+import { renderToStaticMarkup } from "react-dom/server";
 
-import { Space_Grotesk } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import SectionContainer from "@/components/SectionContainer";
 import Footer from "@/components/Footer";
 import siteMetadata from "@/data/siteMetadata";
 import { ThemeProviders } from "./theme-providers";
 import { Metadata } from "next";
+ 
 
-const space_grotesk = Space_Grotesk({
+const circuitTileSVGlight = 'url("/static/images/title.png")';
+const circuitTileSVGdark = 'url("/static/images/titledark.webp")';
+
+const circuitTileSVGToggle = `
+    :root { --bg-tile: ${circuitTileSVGlight}; }
+    .dark { --bg-tile: ${circuitTileSVGdark}; }
+  `;
+
+const pt_sans = Noto_Sans({
+  weight: "400",
   subsets: ["latin"],
   display: "swap",
   variable: "--font-space-grotesk",
@@ -29,7 +40,7 @@ export const metadata: Metadata = {
     url: "./",
     siteName: siteMetadata.title,
     images: [siteMetadata.socialBanner],
-    locale: "en_US",
+    locale: siteMetadata.locale,
     type: "website",
   },
   alternates: {
@@ -64,7 +75,7 @@ export default function RootLayout({
   return (
     <html
       lang={siteMetadata.language}
-      className={`${space_grotesk.variable} scroll-smooth`}
+      className={`${pt_sans.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <link
@@ -85,7 +96,16 @@ export default function RootLayout({
         content="#000000"
       />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="bg-white/90 text-black antialiased dark:bg-[#1B1B1B] dark:text-white transition-colors duration-200">
+      <body
+        className="min-h-screen
+          bg-repeat bg-[length:340px_340px] dark:bg-[length:450px_450px]
+          bg-[image:var(--bg-tile)] bg-white text-black antialiased dark:bg-[#1B1B1B] dark:text-white transition-colors duration-200"
+      >
+        <style
+          dangerouslySetInnerHTML={{
+            __html: circuitTileSVGToggle,
+          }}
+        />
         <ThemeProviders>
           <SectionContainer>
             <div className="flex h-screen flex-col justify-between font-sans">

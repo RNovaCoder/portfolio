@@ -1,6 +1,6 @@
 export const devData = {
   title: "Portfolio",
-  author: "Ricardo Daniel Villa A.",
+  author: "Ricardo V.",
   headerTitle: "Nova Coder",
   description: "Trabajos hechos",
   language: "es-PE",

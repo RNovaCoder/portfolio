@@ -7,11 +7,9 @@ export default function Footer() {
       <div className="flex flex-col items-center">
         <FooterIcons ></FooterIcons>
         <div className="mb-3 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{siteMetadata.author}</div>
+          <div>{siteMetadata.legalEntity}</div>
           <div>{` - `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
-          {/* <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link> */}
         </div>
       </div>
     </footer>

@@ -8,15 +8,16 @@ authors: ['ricardo']
 layout: PostSimple
 techStack:
   ['LitElement', 'TailWind', 'JavaScript', 'SmartElment', 'Git', 'HostGator']
-imgSrc: '/static/proyectos/inspecto/InspectoPortada.jpg'
+imgSrc: '/static/proyectos/inspecto/InspectoPortadaV2.jpg'
 logo: '/static/proyectos/inspecto/InspectoLogo.svg'
+siteUrl: "https://inspecto.webprized.com/editor"
 ---
 import { TechStack } from '@/components/DevIcons'
 
 <TOCInline toc={props.toc} asDisclosure />
 
 ## Introducción
-<CImage src='/static/proyectos/inspecto/InspectoPortada.jpg'/>
+<CImage src='/static/proyectos/inspecto/InspectoPortadaV2.jpg'/>
 
 Los Web Components son un estándar web (aún un tanto inmaduro) que permite la creación de componentes reutilizables para aplicaciones web de manera nativa. Estos componentes encapsulan el HTML, CSS y JavaScript relacionado en un solo paquete, lo que facilita su reutilización y mantenimiento. Sin embargo, una de las dificultades de usar componentes de terceros, es probar su API de manera efectiva, especialmente cuando la documentación es ambigua o insuficiente.
 
@@ -37,7 +38,7 @@ Esto permite una depuración más efectiva y una comprensión más profunda de l
 - Flexibilidad para testear cualquier componente basado en los estándares de WebComponent
 - Provee una función global, sencilla y minimalista: `cw()` para mostrar cualquier resultado por su consola
 
-## Tecnologías usadas
+## Tecnologías usadas y enlaces
 <TechStack stacks = {props.techStack}/>
 - Uso de la biblioteca para crear WebComponents nativos Lit (anteriormente LitElement) junto con la un tanto inmadura Api Nativa WebComponents
 - Uso de TailWindCss

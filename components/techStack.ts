@@ -3,6 +3,8 @@ export type TechStack =
   | "TypeScript"
   | "JavaScript"
   | "Java"
+  | "CloudFlare"
+  | "NodeJs"
   | "React"
   | "NextJS"
   | "Svelte"
@@ -35,13 +37,17 @@ export type TechStack =
   | "Vercel"
   | "WebComponents"
   | "HostGator"
-  | "Azure";
+  | "Azure"
+  | "Flutter"
+  | "Dart";
 
 export const techStack: TechStack[] = [
   "Python",
   "TypeScript",
   "JavaScript",
   "Java",
+  "CloudFlare",
+  "NodeJs",
   "React",
   "NextJS",
   "Svelte",
@@ -75,4 +81,6 @@ export const techStack: TechStack[] = [
   "WebComponents",
   "HostGator",
   "Azure",
+  "Flutter",
+  "Dart"
 ];

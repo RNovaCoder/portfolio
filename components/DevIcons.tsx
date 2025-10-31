@@ -2640,11 +2640,173 @@ export const Azure = () => {
   );
 };
 
+export const Flutter = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={"100%"}
+        height={"100%"}
+        className="bg-gray-100 p-[2px] rounded-sm"
+        viewBox="0 0 64 64"
+      >
+        <path fill="#39CEFD" d="M38 0 6 32l9.8 9.8L57.7 0z" />
+        <path
+          fill="#16B9FD"
+          d="m20.729 46.794 9.831-9.826 9.826 9.831-9.831 9.826z"
+        />
+        <path fill="#39CEFD" d="M57.7 29.5H38l-7.4 7.4 9.9 9.9z" />
+        <path fill="#084A94" d="m45.2 51.6-14.6 5 9.9-9.8z" />
+        <path fill="#03569B" d="M57.7 64 45.2 51.6l-14.6 5L38 64z" />
+      </svg>
+    </>
+  );
+};
+
+export const Dart = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={"100%"}
+        height={"100%"}
+        viewBox="0 0 156.5 156.5"
+        className="bg-gray-100 p-[2px] rounded-sm"
+      >
+        <g data-name="Capa 2">
+          <path
+            d="M26.7 26.7 69.9 5.1c1.1-.8 10.9-7.8 20.8-4a17.4 17.4 0 0 1 6 4l59.8 59.7v63.9h-27.8Z"
+            fill="#40c4ff"
+          />
+          <path
+            d="M26.7 26.7 2 78.2a16.5 16.5 0 0 0-1.8 10 16 16 0 0 0 4.9 9.6L36 128.7h92.7Z"
+            fill="#01579b"
+          />
+          <path d="M128.7 156.5H63.8L36 128.7h92.7v27.8z" fill="#40c4ff" />
+          <path
+            d="M26.7 26.7v87.1a13.7 13.7 0 0 0 3.8 9.4l5.5 5.5h92.7Z"
+            fill="#29b6f6"
+          />
+          <path
+            d="M156.5 64.8v63.9h-27.8l-102-102h85a15.8 15.8 0 0 1 11.4 4.8Z"
+            fill="#01579b"
+          />
+        </g>
+      </svg>
+    </>
+  );
+};
+
+export const CloudFlare = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48.2 21.8"
+      width={"100%"}
+      height={"100%"}
+    >
+      <path
+        fill="#f48120"
+        d="m13.5 15.8 17.5-.2a6.2 6.2 0 0 0 5.1-3.8l1-2.6c.1-.1.1-.1 0-.3a11.4 11.4 0 0 0-21.9-1.2 5.6 5.6 0 0 0-3.6-1 5.2 5.2 0 0 0-4.5 6.4A7.4 7.4 0 0 0 0 20.4a3.7 3.7 0 0 0 .1 1.1.3.3 0 0 0 .3.3h32.1c.2 0 .4-.1.4-.3l.3-1.1a3 3 0 0 0-.3-2.6 3.3 3.3 0 0 0-2.1-1.1l-17.4-.2c-.1 0-.2-.2-.2-.3s.1-.3.3-.4Z"
+      />
+      <path
+        fill="#faad3f"
+        d="M38.7 9.2h-.5l-.3.2-.7 2.4a2.9 2.9 0 0 0 .3 2.6 2.6 2.6 0 0 0 2.1 1.1l3.7.2c0 .1.1.2.2.3s-.1.4-.3.4l-3.8.2a6.3 6.3 0 0 0-5.1 3.8l-.2.9c-.1.1 0 .3.2.3h13.2c.2.1.3 0 .3-.2a10.9 10.9 0 0 0 .4-2.6 9.6 9.6 0 0 0-9.5-9.5"
+      />
+    </svg>
+  );
+};
+
+export const NodeJs = () => {
+  return (
+    <svg
+      id="adc17436-705e-40d8-81fe-c8453be3972b"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 172 194.3"
+      width={"100%"}
+      height={"100%"}
+    >
+      <defs>
+        <linearGradient
+          id="f7f5e011-466c-4f10-8e26-39e531e90ddd"
+          x1={102.08}
+          y1={820.1}
+          x2={101.68}
+          y2={819.37}
+          gradientTransform="matrix(170.29, 0, 0, -194.04, -17057.73, 159432.52)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0} stopColor="#41873f" />
+          <stop offset={0.33} stopColor="#418b3d" />
+          <stop offset={0.64} stopColor="#419637" />
+          <stop offset={0.93} stopColor="#3fa92d" />
+          <stop offset={1} stopColor="#3fae2a" />
+        </linearGradient>
+        <linearGradient
+          id="ec56f1e2-8b7a-4ac6-945b-6a4bc9e6762b"
+          x1={101.82}
+          y1={819.72}
+          x2={102.98}
+          y2={820.45}
+          gradientTransform="matrix(166.32, 0, 0, -193.96, -16650.87, 159364.45)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0.14} stopColor="#41873f" />
+          <stop offset={0.4} stopColor="#54a044" />
+          <stop offset={0.71} stopColor="#66b848" />
+          <stop offset={0.91} stopColor="#6cc04a" />
+        </linearGradient>
+        <linearGradient
+          id="b5405a3b-8a09-42cf-bbb3-825d057668e0"
+          x1={101.34}
+          y1={819.77}
+          x2={102.4}
+          y2={819.77}
+          gradientTransform="matrix(166.14, 0, 0, -194.11, -16629.56, 159493.28)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0.09} stopColor="#6cc04a" />
+          <stop offset={0.29} stopColor="#66b848" />
+          <stop offset={0.6} stopColor="#54a044" />
+          <stop offset={0.86} stopColor="#41873f" />
+        </linearGradient>
+      </defs>
+      <path
+        id="b8550f27-fe09-4383-8f1b-b86d185f75f5"
+        data-name="path-2"
+        d="M299.9,267.7a9.6,9.6,0,0,0-9.3,0l-76.7,43.9a8.9,8.9,0,0,0-4.6,8v87.9a9.4,9.4,0,0,0,4.6,8l76.7,43.8a9.1,9.1,0,0,0,9.3,0l76.8-43.8a9.2,9.2,0,0,0,4.6-8V319.6a9.5,9.5,0,0,0-4.6-8l-76.8-43.9Z"
+        transform="translate(-209.3 -266.5)"
+        style={{
+          fill: "url(#f7f5e011-466c-4f10-8e26-39e531e90ddd)",
+        }}
+      />
+      <path
+        d="M376.2,311.6l-76.4-43.9-2.4-.9L211.8,413.5a10,10,0,0,0,2.6,2.1l76.3,43.9a8.9,8.9,0,0,0,7.1.9l80.3-147a10.9,10.9,0,0,0-1.9-1.8Z"
+        transform="translate(-209.3 -266.5)"
+        style={{
+          fill: "url(#ec56f1e2-8b7a-4ac6-945b-6a4bc9e6762b)",
+        }}
+      />
+      <path
+        d="M376.3,415.5a11,11,0,0,0,4.6-5.8l-83.8-143a9.2,9.2,0,0,0-6.5,1l-75.9,43.7,81.8,149.2a11.8,11.8,0,0,0,3.5-1.1l76.3-44Z"
+        transform="translate(-209.3 -266.5)"
+        style={{
+          fillRule: "evenodd",
+          fill: "url(#b5405a3b-8a09-42cf-bbb3-825d057668e0)",
+        }}
+      />
+    </svg>
+  );
+};
+
 export const DevIcons = {
   Python: PythonIcon,
   Java: Java,
   JavaScript: JavaScript,
   React: ReactIcon,
+  NodeJs: NodeJs,
+  CloudFlare: CloudFlare,
   PostgreSQL: Postgres,
   TypeScript: TypeScript,
   MongoDB: MongoDB,
@@ -2678,6 +2840,8 @@ export const DevIcons = {
   WebComponents: WebComponents,
   HostGator: HostGator,
   Azure: Azure,
+  Flutter: Flutter,
+  Dart: Dart,
 };
 
 export function TechStack({ stacks }: { stacks?: string[] }) {
