@@ -75,7 +75,7 @@ export default function PostLayout({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span className="group-hover:underline">Ir a sitio</span> <span> 🌐 </span>
+                        <span className="group-hover:underline">Ir a sitio</span> <span className="inline-block animate-wave"> 🌐 </span>
                       </Link>
                   ) : (
                     authorDetails.map(
