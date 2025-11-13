@@ -5,7 +5,7 @@ const siteMetadata = {
   legalEntity: "NOVA CODER",
   description: "Proyectos NovaCoder",
   language: "es-PE",
-  whatsapp: "+14242790722",
+  whatsapp: "+13152802572",
   theme: "dark", // system, dark or light
   siteUrl: "https://portfolio.novacoder.tech",
   siteRepo: "https://github.com/RNovaCoder",
